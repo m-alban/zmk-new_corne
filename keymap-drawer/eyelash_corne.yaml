@@ -18,7 +18,7 @@ layers:
   - A
   - S
   - D
-  - F
+  - G
   - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
