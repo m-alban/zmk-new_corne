@@ -69,7 +69,9 @@
                                             &trans        &trans           &trans                                                                       &trans           &trans           &trans
             >;
 
-            sensor-bindings = <&rsr_vol &rsr_trans>;
+            sensor-bindings =
+                <&inc_dec_kp C_BRIGHTNESS_INC C_BRIGHTNESS_DEC>,
+                <&rsr_trans>;
         };
 
         raise_layer {
