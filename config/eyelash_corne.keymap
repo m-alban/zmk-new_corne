@@ -64,10 +64,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans      &kp N1          &kp N2          &kp N3        &kp N4           &kp N5                                      &mmv MOVE_UP                     &rgb_ug RGB_TOG  &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW     &kp RIGHT_ARROW  &kp BSPC
+&kp GRAVE   &kp N1          &kp N2          &kp N3        &kp N4           &kp N5                                      &mmv MOVE_UP                     &rgb_ug RGB_TOG  &kp LEFT_ARROW   &kp DOWN_ARROW   &kp UP_ARROW     &kp RIGHT_ARROW  &kp BSPC
 &kp DELETE  &kp NUMBER_6    &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9     &kp NUMBER_0                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &rgb_ug RGB_HUI  &kp RIGHT_GUI    &kp RIGHT_ALT    &kp RCTRL        &kp RIGHT_SHIFT  &kp BACKSLASH
-&trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none         &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END          &kp PG_DN
-                                            &trans        &trans           &trans                                                                       &kp INS          &kp DEL          &trans
+&trans      &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &none         &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &none            &kp RCTRL
+                                            &trans        &trans           &trans                                                                       &trans           &trans           &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
@@ -76,10 +76,10 @@
         raise_layer {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp BSPC
-&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                    &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+&trans  &kp EXCL      &kp AT        &kp HASH   &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET      &kp AMPS        &kp ASTRK  &kp LPAR  &kp RPAR           &kp BSPC
+&trans  &bt BT_CLR    &mkp LCLK     &mkp MCLK  &mkp RCLK  &mkp MB4             &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp PAGE_UP    &kp MINUS       &kp PLUS   &kp LBKT  &kp RIGHT_BRACKET  &kp PIPE
+&trans  &out OUT_USB  &out OUT_BLE  &none      &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp PAGE_DOWN  &kp UNDERSCORE  &kp EQUAL  &kp HOME  &kp END            &kp RCTRL
+                                    &trans     &trans     &trans                                                                &trans         &trans          &trans
             >;
 
             sensor-bindings = <&rsr_vol &rsr_trans>;
